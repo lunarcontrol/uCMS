@@ -1,4 +1,7 @@
 <?php
+require('../access.php');
+?>
+<?php
 
 $refresh = true;
 include("glob.php");
