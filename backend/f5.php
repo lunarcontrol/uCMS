@@ -1,8 +1,3 @@
-<?php
-require('../access.php');
-?>
-<?php
-
 $refresh = true;
 include("glob.php");
 $meta = json_decode(file_get_contents("../meta/meta.txt"), true);
