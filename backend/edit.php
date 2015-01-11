@@ -1,6 +1,4 @@
-<?php
-require('../access.php');
-?>
+
 <?php
 $page = (isset($_POST["page"]) && ($_POST["page"] !== '')) ? $_POST["page"] : $_GET["page"];
 function gc($name) {
