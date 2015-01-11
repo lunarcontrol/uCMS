@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="backend/css/style.css" type="text/css">
     <title>uCMS Index Page!</title>
 
     <!-- Bootstrap -->
@@ -58,6 +59,11 @@
       </div>
     </nav>
     <h1>Hello, GitHub!</h1>
+    <section class="content">
+		    <div id="pages">
+			  <?php $gedit=true; include('page-list.php'); g(false,false); ?>
+		    </div>
+    </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
