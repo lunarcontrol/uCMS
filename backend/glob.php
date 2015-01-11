@@ -1,7 +1,3 @@
-<?php
-require('../access.php');
-?>
-<?php
 error_reporting(2);
 
 function fname($name) {
