@@ -1,6 +1,3 @@
-<?php
-require('../access.php');
-?>
 <!DOCTYPE html>
 <?php
 $json = json_decode(file_get_contents("../meta/meta.txt"), true);
