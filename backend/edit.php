@@ -1,4 +1,7 @@
 <?php
+require('../access.php');
+?>
+<?php
 $page = (isset($_POST["page"]) && ($_POST["page"] !== '')) ? $_POST["page"] : $_GET["page"];
 function gc($name) {
 	$data = json_decode(file_get_contents("../meta/pages/". strtolower($name) .".json"), true);
