@@ -2,13 +2,13 @@
 set_time_limit(500);
 if(isset($_GET['reset']))
 {
-file_put_contents('TEMPUPDATEFILES.zip', file_get_contents('http://belowaverage.ga/ftp/phpMC.zip'));
+file_put_contents('TEMPUPDATEFILES.zip', file_get_contents('https://github.com/DatRoyce/uCMS/archive/master.zip'));
 $zip = new ZipArchive;
 $zip->open('TEMPUPDATEFILES.zip');
 $zip->extractTo('./');
 $zip->close();
 unlink('TEMPUPDATEFILES.zip');
-echo 'Reset! - Please configure your password file ASAP! - Please wait while we redirect you!<meta http-equiv="refresh" content="3;url=./function/Admin.php?update=done" />';
+echo 'Reset! - Remember to Add you username and password!! - Please wait while we finish installation..And Redirect you!!<meta http-equiv="refresh" content="3;url=./function/Admin.php?update=done" />';
 exit;
 }
 echo '<b>LOG</b><br>';
@@ -20,7 +20,7 @@ if(file_exists('SecretPassword.php'))
 {
 $SecretPassword = file_get_contents('SecretPassword.php');
 }
-file_put_contents('TEMPUPDATEFILES.zip', file_get_contents('http://belowaverage.ga/ftp/phpMC.zip'));
+file_put_contents('TEMPUPDATEFILES.zip', file_get_contents('https://github.com/DatRoyce/uCMS/archive/master.zip'));
 $zip = new ZipArchive;
 $zip->open('TEMPUPDATEFILES.zip');
 $zip->extractTo('./');
