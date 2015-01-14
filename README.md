@@ -8,10 +8,17 @@ No Official Release...
 
 Simply Place ALL the files on your server and navigate to example.com/install.php
 
+# To Be Done
+
+* Image/video Gallery
+* Responsive Backend
+* Optimize Custom Themes
+
+# Know Issues
+
+* Visit The Bug/Issue Tracker!
+[Here!](https://github.com/DatRoyce/uCMS/issues)
+
 # License
 
-Copyright © 2015 Royce Whitaker roycewhitaker@rocketmail.com
-This work is free. You can redistribute it and/or modify it under the
-terms of the **Do What The Fuck You Want To Public License**, Version 2,
-as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 
