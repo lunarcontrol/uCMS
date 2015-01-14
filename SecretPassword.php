@@ -1,11 +1,12 @@
 <?php
-//Here we are, The moment of truth. Place your password in the brackets to keep it a secret to the world...
-//Username
+/Please Replace the password and username in the apprpriate slot!
+//They are case sensititive and can be changed any time ;)
 $Username = 'USERNAMEGOESHERE';
 //Password
 $Password = 'PASSWORDGOESHERE';
 //Only edit (USERNAMEGOESHERE) and (PASSWORDGOESHERE)
+//make sure not to remove the ' as well..
 
-//If you are having troubles with this, please message me on Skype "Dylan.Bickerstaff" or open a help desk topic on my website!
-//                                                             https://belowaverage.ga/b/browse.php?site=5_Help&p=1_Help%20Desk
+//If you are having trouble, create an help request here:
+//                                                             https://github.com/DatRoyce/uCMS/issues
 ?>
