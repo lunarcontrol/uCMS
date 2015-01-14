@@ -1,0 +1,44 @@
+<?php
+set_time_limit(500);
+if(isset($_GET['reset']))
+{
+file_put_contents('TEMPUPDATEFILES.zip', file_get_contents('http://belowaverage.ga/ftp/phpMC.zip'));
+$zip = new ZipArchive;
+$zip->open('TEMPUPDATEFILES.zip');
+$zip->extractTo('./');
+$zip->close();
+unlink('TEMPUPDATEFILES.zip');
+echo 'Reset! - Please configure your password file ASAP! - Please wait while we redirect you!<meta http-equiv="refresh" content="3;url=./function/Admin.php?update=done" />';
+exit;
+}
+echo '<b>LOG</b><br>';
+if(file_exists('db.ini'))
+{
+$database = file_get_contents('db.ini');
+}
+if(file_exists('SecretPassword.php'))
+{
+$SecretPassword = file_get_contents('SecretPassword.php');
+}
+file_put_contents('TEMPUPDATEFILES.zip', file_get_contents('http://belowaverage.ga/ftp/phpMC.zip'));
+$zip = new ZipArchive;
+$zip->open('TEMPUPDATEFILES.zip');
+$zip->extractTo('./');
+$zip->close();
+unlink('TEMPUPDATEFILES.zip');
+if(file_exists('SecretPassword.php') and !empty($SecretPassword))
+{
+file_put_contents('SecretPassword.php', $SecretPassword);
+echo 'File Updated! - SecretPassword.php Spared<br>';
+}
+if(file_exists('db.ini') and !empty($database))
+{
+file_put_contents('db.ini', $database);
+echo 'File Updated! - db.ini Spared<br>Updated! - Please wait while we redirect you!<meta http-equiv="refresh" content="3;url=./function/Admin.php?update=done" />';
+}
+else
+{
+echo 'db.ini not found! Loading default!<br>';
+echo 'Installed! - Please wait while we redirect you!<meta http-equiv="refresh" content="3;url=./function/Admin.php?update=done" />';
+}
+?>
