@@ -17,7 +17,7 @@ echo $settings['Home']['description'];
         foreach ($files as $file) {
           echo '
       <div id="slide" class="item">
-      <img style="margin: 0 auto;" src="function/img/Home Page Slides/'.$file.'" alt="" />
+      <img style="margin: 0 auto;" src="function/img/HomeSlides/'.$file.'" alt="" />
       <div class="carousel-caption">
       <p>'.$file.'</p>
       </div>
