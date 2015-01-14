@@ -25,7 +25,7 @@ Simply Place ALL the files on your server and navigate to example.com/install.ph
 
 Copyright (c) 2015  Royce Whitaker
 
-**In addition to following, I ask that you do **NOT** remove/edit the code comments that say "Please Do Not Remove"**
+In addition to following, I ask that you do **NOT** remove/edit the code comments that say "Please Do Not Remove"**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
