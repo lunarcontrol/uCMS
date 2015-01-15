@@ -81,8 +81,8 @@ header('location: Admin.php');
     <div id="header">
       <div id="logo">
         <div id="logo_text">
-          <h1><a href="../">Admin Panel - <span class="logo_colour">phpMC</span></a></h1>
-          <h2>Script Designed by Below Average - v1.4.2b</h2>
+          <h1><a href="../">Admin Panel - <span class="logo_colour">uCMS</span></a></h1>
+          <h2>Script Designed by Royce Whitaker - Pre-Beta</h2>
         </div>
       </div>
       <div id="menubar">
