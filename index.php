@@ -213,10 +213,7 @@ if (isset($_GET['p']))
   </body>
 </html>
 
-<!-- This guy here is important for me... I use it to collect data on how many hits all my code gets! Yay for stats. Please don't erase it ='( I will cry.. -->
-<div id="response"><!-- Script Built by Below Average! Krisdb2009. The phonehome analytic engine did not respond... --></div>
-<script>
-$(document).ready(function() {
-$("#response").load("<?php $actual_link = 'http'.(isset($_SERVER['HTTPS']) ? 's' : '').'://'."{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}"; echo '//belowaverage.ga/PhoneHome/index.php?url='.$actual_link.'&version=1.4.2b&product=phpMC'; ?>");
-});
-</script>
+<!-- PLEASE DO NOT REMOVE THE FOLLOWING CODE! -->
+<!-- uCMS is developed mainly by Royce Whitaker -->
+<!-- You can view the project here: github.com/DatRoyce/uCMS -->
+<!-- PLEASE DO NOT REMOVE THE ABOVE CODE! -->
