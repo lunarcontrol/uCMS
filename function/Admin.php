@@ -163,13 +163,6 @@ if (empty($_GET['p'])) {
 			</tr>
 		</table>
 		
-		<h1>Minecraft Server</h1>
-		<table>
-			<tr>
-			<td align="right">Server IP and/or with the server Port (example.com:25565):</td>
-			<td align="left"><input type="text" value="' . $settings['mcserver']['ip'] . '" name="mcserver[ip]" /></td>
-			</tr>
-		</table>
 		<input type="submit" value="Submit">
 		</form>
 		<br><br><br><br><br><br><br>
@@ -178,7 +171,7 @@ if (empty($_GET['p'])) {
 		<table>
 			<tr>
 			<td align="left"><input type="submit" value="Update" name="update" /></td>
-			<td align="left"><input type="submit" value="Reset" name="reset" /></td><td>Only update if you know there is a new version! - <a href="http://www.planetminecraft.com/mod/phpmc---custom-website-script/">Planet Minecraft</a></td>
+			<td align="left"><input type="submit" value="Reset" name="reset" /></td><td>Only update if you know there is a new version! - <a href="https://github.com/DatRoyce/uCMS/">GitHub</a></td>
 			</tr>
 		</table>
 		</form>
