@@ -2,7 +2,7 @@
 
 # Release(s)
 
-No Official Release... 
+Official Release Coming Soon!
 
 # Setup
 
