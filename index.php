@@ -207,7 +207,7 @@ if (isset($_GET['p']))
       $('#this-carousel-id').carousel({ interval: 5000, cycle: true });
 	}); 
 	</script>
-	<!-------------->
+	
 	
 	
   </body>
