@@ -1,4 +1,4 @@
-# eCMS -Royce Whitaker
+# uCMS -Royce Whitaker
 
 # Release(s)
 
