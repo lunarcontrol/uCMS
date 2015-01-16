@@ -1,8 +1,8 @@
 # uCMS -Royce Whitaker
 
 # Release(s)
-
-Official Release Coming Soon!
+0.1.0 Pre-Alpha (January 15, 2015):
+View it [Here!](https://github.com/DatRoyce/uCMS/releases/tag/0.1.0-Pre-Alpha)
 
 # Setup
 
