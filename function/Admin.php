@@ -2,7 +2,7 @@
 session_start();
 ob_start();
 if (empty($_SESSION['Auth']) and empty($_POST['Username']) and empty($_POST['Password'])) {
-    echo '<h1>What is your Secret Username and Password?</h1>
+    echo '<h1>Please Enter your username and password!</h1>
 <form name="input" method="post">
 Username: <input type="text" name="Username"><br>
 Password: <input type="password" name="Password"><br>
