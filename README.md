@@ -10,6 +10,7 @@ Simply Place ALL the files on your server and navigate to example.com/install.ph
 
 # To Be Done
 
+* Responsive/Modern Admin Area
 * Image/video Gallery
 * Responsive Backend
 * Optimize Custom Themes
