@@ -189,6 +189,7 @@ if (isset($_GET['p'])) {
 	   <?php
 if (empty($_GET['p'])) {
     echo '<h2>Choose a tab to edit :)</h2>';
+    echo'<a class="btn btn-primary btn-large" href="?p=General">General Tab &raquo;</a>';
 } Else {
     
     //General Tab
