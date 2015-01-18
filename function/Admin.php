@@ -2,7 +2,7 @@
 session_start();
 ob_start();
 if (empty($_SESSION['Auth']) and empty($_POST['Username']) and empty($_POST['Password'])) {
-    echo '<h1>Please Enter your username and password!</h1>
+    echo '<h1>What is your Secret Username and Password?</h1>
 <form name="input" method="post">
 Username: <input type="text" name="Username"><br>
 Password: <input type="password" name="Password"><br>
@@ -67,58 +67,128 @@ unlink('../update.php');
 header('location: Admin.php');
 }
 ?>
-<!DOCTYPE HTML>
-<html>
 
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js">
 <head>
-  <title>Admin Panel</title>
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-  <link rel="stylesheet" type="text/css" href="../dpnd/admin.css" />
-</head>
+    <meta charset="utf-8">
+    <title>Admin Panel</title>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
 <body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <h1><a href="../">Admin Panel - <span class="logo_colour">uCMS</span></a></h1>
-          <h2>Script Designed by Royce Whitaker - Pre-Beta</h2>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <span class="brand">uCMS Dashboard</span>
+
+                <div class="nav-collapse collapse">
+
+                    <ul class="nav">
+                        <li class="active"><a href="#"><i class="icon-home icon-black"></i> Dashboard</a></li>
+                        <li><a href="#"><i class="icon-pencil icon-black"></i>Sample 2</a></li>
+                        <li><a href="#"><i class="icon-file icon-black"></i>Sample 3</a></li>
+                        
+
+                    </ul>
+
+                    <ul class="nav pull-right settings">
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Account Settings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">System Settings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav pull-right settings">
+                        <li><a href="#" class="tip icon logout" data-original-title="Settings"
+                               data-placement="bottom"><i class="icon-large icon-cog"></i></a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="#" class="tip icon logout" data-original-title="Logout" data-placement="bottom"><i
+                           class="icon-large icon-off"></i></a></li>
+                    </ul>
+
+                    <ul class="nav pull-right settings">
+                        <li class="divider-vertical"></li>
+                    </ul>
+
+                    <p class="navbar-text pull-right">
+                        Welcome <strong>Admin</strong>
+                    </p>
+
+                    <ul class="nav pull-right settings">
+                        <li class="divider-vertical"></li>
+                    </ul>
+
+                    <div class="pull-right">
+                        <form class="form-search form-inline" style="margin:5px 0 0 0;" method="post">
+                            <div class="input-append">
+                                <input type="text" name="keyword" class="span2 search-query" placeholder="Search">
+                                <button type="submit" class="btn"><i class="icon-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <!--/.nav-collapse -->
+            </div>
         </div>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-		  <?php
-$firlinks = array(
-    'Home',
-    'News',
-    'Gallery',
-    'General',
-	'Themes',
-    'Extra Pages'
-);
-foreach ($firlinks as $link) {
-    if (isset($_GET['p']) and $_GET['p'] == $link) {
-        echo '<li class="selected"><a href="Admin.php?p=' . $link . '">' . $link . '</a></li>';
-    } else {
-        echo '<li><a href="Admin.php?p=' . $link . '">' . $link . '</a></li>';
-    }
-}
-?>
-			<li><a href="Admin.php?logout">Logout</a></li>
-        </ul>
-      </div>
     </div>
-    <div id="content_header"></div>
-    <div id="site_content">
-      <div id="content">
-       <h1><?php
+</div>
+
+<div class="row-fluid">
+    <div class="span2 pull-left">
+        <div class="well sidebar-nav">
+            <ul class="nav nav-tabs nav-stacked">
+                <li class="nav-header">Navigation</li>
+                <li class="active"><a href="#">Select One:</a></li>
+                <li><a href="?p=General">General</a></li>
+                <li><a href="?p=News">News</a></li>
+                <li><a href="?p=Themes">Themes</a></li>
+                <li><a href="?p=Extra%20Pages">Extra Pages</a></li>
+                <li><a href="?logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--/.well -->
+    <!--/span3-->
+
+    <div class="span10 pull-left">
+
+        <div class="well">
+            <h1>The uCMS Dashboard</h1>
+<!-- main area! -->
+             
+		<?php
 if (isset($_GET['p'])) {
     echo $_GET['p'];
 }
 ?></h1>
 	   <?php
 if (empty($_GET['p'])) {
-    echo '<h2>Select a tab to edit!</h2>';
+    echo '<h2>Choose a tab to edit :)</h2>';
 } Else {
     
     //General Tab
@@ -414,7 +484,7 @@ if (empty($_GET['p'])) {
 				echo '<span style="color:green;">Saved</span> - <a target="_blank" href="../?p='.$_GET['edit'].'">Preview your work!</a>';
             }
             if (!empty($_POST['pointurl'])) {
-                $settings['extrapages'][$_GET['edit']] = "<iframe src='".$_POST['pointurl']."' id='fill'>Needs iframe support on this page!</iframe>";
+                $settings['extrapages'][$_GET['edit']] = "<iframe src='".$_POST['pointurl']."' id='fill'>You need a modern browser with iFrame support!</iframe>";
                 file_put_contents('../db.ini', arr2ini($settings));
 				echo '<span style="color:green;">Saved</span> - <a target="_blank" href="../?p='.$_GET['edit'].'">Preview your work!</a>';
             }
@@ -455,13 +525,32 @@ if (empty($_GET['p'])) {
     
 }
 ?>
-      </div>
+            
+            
+            
+            
+        </div>
+
     </div>
-    <div id="content_footer"></div>
-    <div id="footer">
-      <p>Copyright &copy; Royce Whitaker & github.com/DatRoyce | <a href="http://github.com/DatRoyce">Designed By Royce W!</a></p>
-    </div>
-    <p>&nbsp;</p>
-  </div>
+    <!--/span9-->
+
+</div>
+<!--/row-fluid-->
+
+<hr>
+
+<footer align="center">
+    <p>Copyright &copy; 2015 <strong>Royce Whitaker (github.com/DatRoyce)</strong></p>
+    <p>v0.1.1 Pre-Alpha Release (January 17, 2015)</p>
+</footer>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script>
+    // enable tooltips
+    $(".tip").tooltip();
+</script>
+
 </body>
 </html>
