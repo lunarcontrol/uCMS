@@ -271,54 +271,9 @@ if (empty($_GET['p'])) {
     //
     //Gallery
     if ($_GET['p'] == 'Gallery') {
-        echo '<h2>Gallery Page</h2>';
-        //upload
         
-        if (isset($_FILES['file'])) {
-            if ($_FILES["file"]["error"] > 0) {
-                echo "Error: " . $_FILES["file"]["error"] . "<br>";
-            } else {
-                echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-                echo "Type: " . $_FILES["file"]["type"] . "<br>";
-                echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-                move_uploaded_file($_FILES["file"]["tmp_name"], "img/" . $_FILES["file"]["name"]);
-            }
-        }
-        //endupl
         
-        //Delete
-        if (isset($_GET['Delete'])) {
-            echo '<span style="color:red;">Deleted, ' . $_GET['Delete'] . '</span>';
-            unlink('img/' . $_GET['Delete']);
-        }
-        //enddElete
         
-        $allFiles = scandir('img'); // Or any other directory
-        $files    = array_diff($allFiles, array(
-            '.',
-            '..',
-			'Home Page Slides'
-        ));
-        echo '<table>';
-        foreach ($files as $file) {
-            
-            
-            echo '<tr><td>' . $file . '</td><td><a href="./img/' . $file . '">Download</a></td><td><a href="Admin.php?p=Gallery&Delete=' . $file . '">Delete</a></td></tr>';
-            
-            
-        }
-        echo '</table>
-		<fieldset style="padding:10px;">
-		<legend>Upload File</legend>
-		<form action="Admin.php?p=Gallery" method="post"
-		enctype="multipart/form-data">
-		<label for="file">Upload Image:</label>
-		<input type="file" name="file" id="file"><br>
-		<input type="submit" name="submit" value="Submit">
-		</form>
-		</fieldset>
-		';
-		
 		echo '<h2>Home Page Slide Show</h2>';
 		//upload
         
@@ -329,7 +284,7 @@ if (empty($_GET['p'])) {
                 echo "Upload: " . $_FILES["file2"]["name"] . "<br>";
                 echo "Type: " . $_FILES["file2"]["type"] . "<br>";
                 echo "Size: " . ($_FILES["file2"]["size"] / 1024) . " kB<br>";
-                move_uploaded_file($_FILES["file2"]["tmp_name"], "img/Home Page Slides/" . $_FILES["file2"]["name"]);
+                move_uploaded_file($_FILES["file2"]["tmp_name"], "img/HomeSlides/" . $_FILES["file2"]["name"]);
             }
         }
         //endupl
@@ -337,11 +292,11 @@ if (empty($_GET['p'])) {
         //Delete
         if (isset($_GET['Delete2'])) {
             echo '<span style="color:red;">Deleted, ' . $_GET['Delete2'] . '</span>';
-            unlink('img/Home Page Slides/' . $_GET['Delete2']);
+            unlink('img/HomeSlides/' . $_GET['Delete2']);
         }
         //enddElete
         
-        $allFiles = scandir('img/Home Page Slides/'); // Or any other directory
+        $allFiles = scandir('img/HomeSlides/'); // Or any other directory
         $files    = array_diff($allFiles, array(
             '.',
             '..'
@@ -350,7 +305,7 @@ if (empty($_GET['p'])) {
         foreach ($files as $file) {
             
             
-            echo '<tr><td>' . $file . '</td><td><a href="./img/Home Page Slides/' . $file . '">Download</a></td><td><a href="Admin.php?p=Gallery&Delete2=' . $file . '">Delete</a></td></tr>';
+            echo '<tr><td>' . $file . '</td><td><a href="./img/HomeSlides/' . $file . '">Download</a></td><td><a href="Admin.php?p=Gallery&Delete2=' . $file . '">Delete</a></td></tr>';
             
             
         }
