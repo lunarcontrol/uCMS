@@ -1,9 +1,9 @@
 <?php
 //Please Replace the password and username in the apprpriate slot!
 //They are case sensititive and can be changed any time ;)
-$Username = 'USERNAMEGOESHERE';
+$Username = 'Admin';
 //Password
-$Password = 'PASSWORDGOESHERE';
+$Password = 'Admin123';
 //Only edit (USERNAMEGOESHERE) and (PASSWORDGOESHERE)
 //make sure not to remove the ' as well..
 
