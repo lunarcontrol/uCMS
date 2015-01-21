@@ -1,6 +1,7 @@
 # uCMS -Royce Whitaker
 
 ## Huge update coming tomorrow (1/18)!
+(Delayed due to busy school schedule...)
 
 # Release(s)
 0.1.0 Pre-Alpha (January 15, 2015):
