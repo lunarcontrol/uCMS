@@ -1,6 +1,6 @@
 # uCMS -Royce Whitaker
 
-## Huge update coming tomorrow (1/18)!
+## Huge update coming tomorrow (1/26)
 (Delayed due to busy school schedule...)
 
 # Release(s)
