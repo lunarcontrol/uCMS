@@ -67,12 +67,6 @@ unlink('../update.php');
 header('location: Admin.php');
 }
 ?>
-
-
-
-
-
-
 <!DOCTYPE html>
 <html class="no-js">
 <head>
