@@ -99,9 +99,9 @@ header('location: Admin.php');
                 <div class="nav-collapse collapse">
 
                     <ul class="nav">
-                        <li class="active"><a href="#"><i class="icon-home icon-black"></i> Dashboard</a></li>
-                        <li><a href="#"><i class="icon-pencil icon-black"></i>Sample 2</a></li>
-                        <li><a href="#"><i class="icon-file icon-black"></i>Sample 3</a></li>
+                        <li class="active"><a href="#"><i class="icon-home icon-black"></i>Main Dashboard</a></li>
+                        <!--<li><a href="#"><i class="icon-pencil icon-black"></i>Page Name</a></li>-->
+                        <!--<li><a href="#"><i class="icon-file icon-black"></i>Page Name</a></li>-->
                         
 
                     </ul>
@@ -220,7 +220,7 @@ if (empty($_GET['p'])) {
 			<td align="right"><b>Please select all switches when applying or defaults will be set to off.</b></td>
 			</tr>
 			<tr>
-			<td align="right">News Button:</td>
+			<td align="left">News Button:</td>
 			<td align="left"><input type="radio" name="firlinks[News]" value="News">On<br><input type="radio" name="firlinks[News]" value="">Off</td>
 			</tr>
 		</table>
