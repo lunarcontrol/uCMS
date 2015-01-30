@@ -3,7 +3,7 @@
 ## Cool New Features
 
 * New Backend
-* Everything Is Responsive!
+* Everything Is Responsive!!
 
 
 # Release(s)
