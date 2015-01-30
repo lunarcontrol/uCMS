@@ -160,6 +160,7 @@ header('location: Admin.php');
                 <li class="active"><a href="#">Select One:</a></li>
                 <li><a href="?p=General">General</a></li>
                 <li><a href="?p=News">News</a></li>
+                <li><a href="?p=Media">Media</a></li>
                 <li><a href="?p=Themes">Themes</a></li>
                 <li><a href="?p=Extra%20Pages">Extra Pages</a></li>
                 <li><a href="?logout">Logout</a></li>
