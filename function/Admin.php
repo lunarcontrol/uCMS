@@ -2,7 +2,7 @@
 session_start();
 ob_start();
 if (empty($_SESSION['Auth']) and empty($_POST['Username']) and empty($_POST['Password'])) {
-    echo '<h1>What is your Secret Username and Password?</h1>
+    echo '<h1>Please enter your (Super-Duper Secret) Username & Password!</h1>
 <form name="input" method="post">
 Username: <input type="text" name="Username"><br>
 Password: <input type="password" name="Password"><br>
@@ -488,7 +488,7 @@ if (empty($_GET['p'])) {
 
 <footer align="center">
     <p>Copyright &copy; 2015 <strong>Royce Whitaker (github.com/DatRoyce)</strong></p>
-    <p>v0.1.1 Pre-Alpha Release (January 17, 2015)</p>
+    <p>v0.1.2 Pre-Alpha Release (January 29, 2015)</p>
 </footer>
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
