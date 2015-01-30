@@ -222,10 +222,6 @@ if (empty($_GET['p'])) {
 			<td align="right">News Button:</td>
 			<td align="left"><input type="radio" name="firlinks[News]" value="News">On<br><input type="radio" name="firlinks[News]" value="">Off</td>
 			</tr>
-			<tr>
-			<td align="right">Gallery Button:</td>
-			<td align="left"><input type="radio" name="firlinks[Gallery]" value="Gallery">On<br><input type="radio" name="firlinks[Gallery]" value="">Off</td>
-			</tr>
 		</table>
 		
 		<input type="submit" value="Submit">
@@ -264,11 +260,11 @@ if (empty($_GET['p'])) {
     }
     //
     //Gallery
-    if ($_GET['p'] == 'Gallery') {
+    if ($_GET['p'] == 'Media') {
         
         
         
-		echo '<h2>Home Page Slide Show</h2>';
+		echo '<h2>Home Page Slides</h2>';
 		//upload
         
         if (isset($_FILES['file2'])) {
@@ -299,7 +295,7 @@ if (empty($_GET['p'])) {
         foreach ($files as $file) {
             
             
-            echo '<tr><td>' . $file . '</td><td><a href="./img/HomeSlides/' . $file . '">Download</a></td><td><a href="Admin.php?p=Gallery&Delete2=' . $file . '">Delete</a></td></tr>';
+            echo '<tr><td>' . $file . '</td><td><a href="./img/HomeSlides/' . $file . '">Download</a></td><td><a href="Admin.php?p=Media&Delete2=' . $file . '">Delete</a></td></tr>';
             
             
         }

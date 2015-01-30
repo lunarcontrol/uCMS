@@ -3,13 +3,15 @@
   <div class="carousel-inner">      
       <div class="item active">
 	    <h1><center>Welcome to <?php echo $settings['general']['sitename']; ?></center></h1>
+	    //This looks in db.ini under 'general' and then it graps the data from 'sitename'
 	    <p><?php
 echo $settings['Home']['description'];
 ?></p>
+//This looks in db.ini under 'general' and then it graps the data from 'sitename'
       </div>
   
   <?php
-        $allFiles = scandir('function/img/HomeSlides'); // Or any other directory
+        $allFiles = scandir('function/img/HomeSlides'); // Any Directory will work
         $files    = array_diff($allFiles, array(
             '.',
             '..'
