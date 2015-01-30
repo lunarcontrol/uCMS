@@ -1,7 +1,10 @@
 # uCMS -Royce Whitaker
 
-## Huge update coming tomorrow (1/26)
-(Delayed due to busy school schedule...)
+## Cool New Features
+
+    * New Backend
+    *Everything Is Responsive!
+
 
 # Release(s)
 0.1.0 Pre-Alpha (January 15, 2015):
