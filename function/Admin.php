@@ -260,7 +260,7 @@ if (empty($_GET['p'])) {
 		';
     }
     //
-    //Gallery
+    //Media
     if ($_GET['p'] == 'Media') {
         
         
@@ -303,7 +303,7 @@ if (empty($_GET['p'])) {
         echo '</table>
 		<fieldset style="padding:10px;">
 		<legend>Upload File</legend>
-		<form action="Admin.php?p=Gallery" method="post"
+		<form action="Admin.php?p=Media" method="post"
 		enctype="multipart/form-data">
 		<label for="file2">Upload Image:</label>
 		<input type="file" name="file2" id="file2"><br>
