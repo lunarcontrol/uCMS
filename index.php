@@ -23,7 +23,7 @@ echo strip_tags(str_replace('-', ' ', $_GET['p']));
     <!-- Bootstrap -->
     <link href="dpnd/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 Shcim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -41,7 +41,7 @@ echo strip_tags(str_replace('-', ' ', $_GET['p']));
   
   
   <?php
-  if($settings['general']['isbanner'] == "true")
+  if($settings['general']['sitenamebanner'] == "true")
   {
   ?>
   <a href="./" style="background-image:url('<?php if(!empty($settings['general']['sitenamebanner'])) { echo $settings['general']['sitenamebanner']; } else { echo 'dpnd/titlehead(modern).jpg'; } ?>');" class="titlehead">&nbsp;<?php

@@ -354,6 +354,14 @@ if (empty($_GET['p'])) {
         }
     }
     //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
     //Custom Themes
     if ($_GET['p'] == 'Themes') {
 		if(isset($_GET['deletecon']))
