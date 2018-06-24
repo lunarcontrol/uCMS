@@ -495,8 +495,8 @@ if (empty($_GET['p'])) {
 <hr>
 
 <footer align="center">
-    <p>Copyright &copy; 2015 <strong>Royce Whitaker (github.com/DatRoyce)</strong></p>
-    <p>v0.1.2 Pre-Alpha Release (January 29, 2015)</p>
+    <p>Copyright &copy; 2018 <strong>Royce Whitaker (github.com/DatRoyce)</strong></p>
+    <p>v0.1.3 Pre-Alpha Release (June 24, 2018)</p>
 </footer>
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
